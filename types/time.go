@@ -16,6 +16,7 @@ package types
 import (
 	"bytes"
 	"fmt"
+	"github.com/studyzy/sqlparse/stmtctx"
 	"log"
 	"math"
 	"regexp"
@@ -27,7 +28,7 @@ import (
 	"github.com/pingcap/errors"
 	"github.com/pingcap/parser/mysql"
 	"github.com/pingcap/parser/terror"
-	"github.com/pingcap/tidb/sessionctx/stmtctx"
+
 	tidbMath "github.com/pingcap/tidb/util/math"
 	"github.com/pingcap/tidb/util/parser"
 )

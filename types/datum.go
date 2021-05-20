@@ -15,6 +15,7 @@ package types
 
 import (
 	"fmt"
+	"github.com/studyzy/sqlparse/stmtctx"
 	"math"
 	"sort"
 	"strconv"
@@ -28,7 +29,6 @@ import (
 	"github.com/pingcap/parser/mysql"
 	"github.com/pingcap/parser/terror"
 	"github.com/pingcap/parser/types"
-	"github.com/pingcap/tidb/sessionctx/stmtctx"
 	"github.com/pingcap/tidb/types/json"
 	"github.com/pingcap/tidb/util/hack"
 )
