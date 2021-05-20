@@ -14,10 +14,10 @@
 package types
 
 import (
+	"github.com/studyzy/sqlparse/collate"
 	"strconv"
 
 	"github.com/pingcap/errors"
-	"github.com/pingcap/tidb/util/collate"
 	"github.com/pingcap/tidb/util/stringutil"
 )
 

@@ -14,10 +14,10 @@
 package types
 
 import (
+	"github.com/studyzy/sqlparse/collate"
 	"math"
 	"time"
 
-	"github.com/pingcap/tidb/util/collate"
 )
 
 // CompareInt64 returns an integer comparing the int64 x to y.
