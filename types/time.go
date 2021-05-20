@@ -16,6 +16,7 @@ package types
 import (
 	"bytes"
 	"fmt"
+	"log"
 	"math"
 	"regexp"
 	"strconv"
@@ -27,7 +28,6 @@ import (
 	"github.com/pingcap/parser/mysql"
 	"github.com/pingcap/parser/terror"
 	"github.com/pingcap/tidb/sessionctx/stmtctx"
-	"github.com/pingcap/tidb/util/logutil"
 	tidbMath "github.com/pingcap/tidb/util/math"
 	"github.com/pingcap/tidb/util/parser"
 )
@@ -427,7 +427,8 @@ func (t Time) FillNumber(dec *MyDecimal) {
 
 	s, err := t.DateFormat(tfStr)
 	if err != nil {
-		logutil.BgLogger().Error("[fatal] never happen because we've control the format!")
+		log.Println("[fatal] never happen because we've control the format!")
+		//logutil.BgLogger().Error("[fatal] never happen because we've control the format!")
 	}
 
 	fsp := t.Fsp()
